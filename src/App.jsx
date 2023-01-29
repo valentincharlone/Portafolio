@@ -1,0 +1,17 @@
+
+
+
+import './index.css'
+import { MyRoutes} from './routes/MyRoutes'
+
+function App() {
+  
+
+  return (
+    <div className="App">
+      <MyRoutes />
+    </div>
+  )
+}
+
+export default App

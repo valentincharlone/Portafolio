@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+  font-family: JetBrains Mono,monospace;
+
+}
+
+
+/* NAVV */
+.header {
+  margin: auto;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.header .logo {
+  flex-grow: 2;
+  display: flex;
+  color: rgb(255, 255, 255);
+  margin-left: 90px;
+}
+.header .logo span{
+  display: block;
+  font-size: 80px;
+  font-weight: bolder;
+}
+.header .logo h2{
+  display: block;
+  flex-basis: 40px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.header nav{
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.menu li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0px 55px ;
+}
+.menu li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  
+  
+}
+.toggle-button {
+  display: none;
+  cursor: pointer;
+  font-size: 3rem;
+  position: relative;
+  right: 60px;
+  color: white;
+}
+
+
+
+/* HOMEEE */
+.home{
+  
+  margin: auto;
+}
+
+.home-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(46, 45, 45, 0.5)), url("./assets/tech1.jpg") ;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.home-section h1 {
+  font-size: 5rem; /* esto es para que la descripción tenga un tamaño de 30px */
+  color: white; /* esto es para que la descripción tenga un color blanco */
+  font-weight: bolder;
+  text-align: center;
+  overflow: hidden; /* oculta el texto que se escribe fuera de la pantalla */
+  border-right: 0.15em solid #000000; /* agrega una línea de cursor */
+  white-space: nowrap; /* evita que el texto se salte de línea */
+  margin: 0 auto; /* centra el texto en la pantalla */
+  letter-spacing: 0.15em; /* agrega espacio entre las letras */
+  animation: 
+    typing 1s steps(40, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+
+}
+
+/* animación de escritura */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+/* animación de cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000000; }
+}
+
+
+/* ABOUUT MI */
+.about{
+  max-width: 1400px;
+  margin: auto;
+  
+}
+
+.about-section {
+  display: flex; /* esto es para que la imagen y la descripción estén alineadas en línea */
+  align-items: center; /* esto es para que la imagen y la descripción queden centradas verticalmente */
+  flex-direction: column;
+}
+.about-section h2{
+  
+  margin-top: 150px;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-image {
+  border-radius: 15px ;
+ 
+  object-fit: cover;
+  width: 370px; 
+  height:470px; 
+  
+}
+
+
+
+/* margin-top: 50px;
+width: 370px; 
+height:470px; 
+object-fit: cover;
+border-radius: 20px; 
+margin-right: 20px;  */
+
+.about-description {
+  margin-top: 50px;
+  width: 60%; /* esto es para que la descripción ocupe la mitad del ancho del contenedor */
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.about-description p{
+  margin-top: 60px;
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+/* SKILLLLS */
+.skills-contain{
+  padding-top: 100px;
+  height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 150px;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
+}
+.skills-contain h1{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 200px;
+  color: white;
+  
+}
+.skills-contain .skills{
+  padding-top: 40px;
+  margin: auto;
+  width: 70%;
+  margin-top: 80px;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.skills-contain .skills:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.skills-contain .skills ul{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 40px;
+}
+.skills-contain .skills li{
+  
+  font-size: 6.5rem;
+  list-style: none;
+  padding-bottom: 100px;
+  
+}
+
+/* PROYECTSS */
+.proyects {
+  max-width: 1400px;
+  margin: auto;
+}
+.proyects h1{
+  font-size: 4rem;
+  padding-top: 150px;
+  
+  text-align: center;
+}
+.works{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 100px;
+}
+.work-item{
+  
+  margin-top: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  margin-bottom: 95px;
+}
+.work-item h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.work-item .map-img{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      border-radius: 10px;
+}
+
+.work-item .map-img img{
+  width: 100%;
+  height: 100%;
+  transition: all 500ms;
+  
+}
+.work-item .map-img .capa{
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.work-item .map-img:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+.work-item .map-img:hover > .capa p{
+  margin-top: 70px;
+  margin-bottom: 20px;
+  
+}
+.work-item .map-img .capa p{
+  color: white;
+  line-height: 30px;
+  margin-left: 50px;
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  text-transform: none;
+  margin-bottom: 120px;
+  transition: all 300ms ease-out;
+  margin-top: 30px;
+  width: 80%;
+}
+
+
+.work-item .links{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 10px 25px 30px 25px;
+}
+.work-item h3{
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+
+/* FORRRMM */
+.contact{
+  max-width: 1400px;
+  margin: auto;
+}
+.contact h1{
+  margin-top: 45px;
+  text-align: center;
+  font-size: 4rem;
+  
+}
+.contact form {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 50%;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.contact form label{
+  
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.contact form input[type="text"],
+input[type="email"],
+textarea {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+  
+}
+
+.contact form input[type="submit"] {
+  margin-top: 100px;
+  width: 50%;
+  background-color: #7e067e;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form input[type="submit"]:hover {
+  background-color: #913e91;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+
+.footer-col a {
+  font-size: 1.7rem;
+  color: white;
+  margin-right: 40px;
+}
+.footer-col .footer-name{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer-col .footer-name .icon{
+  color: aqua;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.footer-col .footer-name p{
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+/* MEDIA QUERI */
+
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+  .toggle-button {
+      display: flex;
+      margin-left: 70px;
+  }
+  .visible {
+    position: absolute;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 100;
+    margin-top: 30px;
+   
+  }
+  .visible li {
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-left: 5px;
+    color: white;
+  }
+  .visible li a{
+    color: black;
+    overflow: hidden;
+  }
+  .home-section h1{
+    font-size: 3rem;
+  }
+  .skills-contain h1{
+    margin-bottom: 15px;
+  }
+  .skills-contain .skills{
+    padding-top: 10px;
+    width: 80%;
+    height: 88%;
+  }
+  
+  .works{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .work-item{
+    margin-left: 50px;
+  }
+  .work-item img{
+    
+    width: 600px;
+  }
+  .skills-contain .skills ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
