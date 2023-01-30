@@ -1,8 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Header from '../components/layout/header'
 
-
-import Home from '../components/Home'
+import Header from '../components/layout/Header'
 import About from '../components/About'
 import LandingPage from '../components/LandingPage'
 import Technologies from '../components/Technologies'
