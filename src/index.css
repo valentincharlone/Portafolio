@@ -16,7 +16,7 @@ body{
 .header {
   margin: auto;
   display: flex;
-  height: 100px;
+  height: 75px;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
@@ -33,21 +33,22 @@ body{
 }
 .header .logo span{
   display: block;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bolder;
 }
 .header .logo h2{
   display: block;
-  flex-basis: 40px;
+  flex-basis: 20px;
   margin-left: 30px;
-  margin-top: 20px;
-  font-weight: 400;
+  margin-top: 8px;
+  font-weight: 100;
   text-transform: lowercase;
+  
 }
 
 .header nav{
-  margin-top: 10px;
-  padding: 50px;
+  margin: 0;
+  padding: 30px;
 }
 
 .menu {
@@ -59,9 +60,9 @@ body{
 
 }
 .menu li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin: 0px 55px ;
+  margin: 0px 45px ;
 }
 .menu li a{
   text-decoration: none;
@@ -72,7 +73,7 @@ body{
 .toggle-button {
   display: none;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
   right: 60px;
   color: white;
@@ -100,17 +101,17 @@ body{
 }
 
 .home-section h1 {
-  font-size: 5rem; /* esto es para que la descripción tenga un tamaño de 30px */
-  color: white; /* esto es para que la descripción tenga un color blanco */
+  font-size: 3.8rem; 
+  color: white; 
   font-weight: bolder;
   text-align: center;
-  overflow: hidden; /* oculta el texto que se escribe fuera de la pantalla */
-  border-right: 0.15em solid #000000; /* agrega una línea de cursor */
-  white-space: nowrap; /* evita que el texto se salte de línea */
-  margin: 0 auto; /* centra el texto en la pantalla */
-  letter-spacing: 0.15em; /* agrega espacio entre las letras */
+  overflow: hidden; 
+  border-right: 0.15em solid #000000;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0.15em; 
   animation: 
-    typing 1s steps(40, end),
+    typing 2s steps(80, end),
     blink-caret 0.75s step-end infinite; /* anima el cursor */
 
 }
@@ -118,7 +119,7 @@ body{
 /* animación de escritura */
 @keyframes typing {
   from { width: 0 }
-  to { width: 20% }
+  to { width: 45% }
 }
 
 /* animación de cursor */
@@ -142,41 +143,39 @@ body{
 }
 .about-section h2{
   
-  margin-top: 150px;
-  font-size: 4rem;
+  margin-top: 100px;
+  font-size: 3.3rem;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .about-image {
-  border-radius: 15px ;
- 
+  border-radius: 10px ;
   object-fit: cover;
-  width: 370px; 
-  height:470px; 
+  width: 270px; 
+  height:370px; 
+  transition: 1s ease;
+  -webkit-filter: blur(5px);
+  transition: 0.5s ease;
+}
+.about-image:hover{
+  -webkit-filter: blur(0px);
   
 }
 
-
-
-/* margin-top: 50px;
-width: 370px; 
-height:470px; 
-object-fit: cover;
-border-radius: 20px; 
-margin-right: 20px;  */
-
 .about-description {
   margin-top: 50px;
-  width: 60%; /* esto es para que la descripción ocupe la mitad del ancho del contenedor */
-  font-size: 1.5rem;
+  width: 50%; /* esto es para que la descripción ocupe la mitad del ancho del contenedor */
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 100px;
 }
 .about-description p{
-  margin-top: 60px;
+  line-height: 30px;
+  margin-top: 20px;
   text-align: justify;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 /* SKILLLLS */
@@ -185,15 +184,15 @@ margin-right: 20px;  */
   height: 100vh;
   max-width: 100%;
   margin: auto;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
 }
 .skills-contain h1{
-  margin-top: 50px;
+  
   text-align: center;
-  font-size: 4rem;
-  margin-bottom: 200px;
+  font-size: 3.3rem;
+  margin-bottom: 80px;
   color: white;
   
 }
@@ -201,7 +200,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   padding-top: 40px;
   margin: auto;
   width: 70%;
-  margin-top: 80px;
+  margin-top: 100px;
   background-color: white;
   margin-bottom: 40px;
   border-radius: 20px;
@@ -215,13 +214,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .skills-contain .skills li{
   
-  font-size: 6.5rem;
+  font-size: 4.7rem;
   list-style: none;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   
 }
 
@@ -231,8 +230,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   margin: auto;
 }
 .proyects h1{
-  font-size: 4rem;
-  padding-top: 150px;
+  font-size: 3.3rem;
+  padding-top: 110px;
   
   text-align: center;
 }
@@ -248,19 +247,22 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   margin-top: 200px;
   margin: 15px;
   border-radius: 10px;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
 }
 .work-item h2{
+  font-size: 1.3rem;
   text-align: center;
   margin-bottom: 30px;
 }
 .work-item .map-img{
+  align-items: center;
   position: relative;
-  width: 100%;
+  margin-left: 60px;
+  width: 80%;
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-      border-radius: 10px;
+  border-radius: 10px;
 }
 
 .work-item .map-img img{
@@ -286,7 +288,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   visibility: visible;
 }
 .work-item .map-img:hover > .capa p{
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 20px;
   
 }
@@ -296,7 +298,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   margin-left: 50px;
   text-align: justify;
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-transform: none;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -308,10 +310,18 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
 .work-item .links{
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
-  padding: 10px 25px 30px 25px;
+  font-size: 1.4rem;
+  padding: 10px 80px 10px 70px;
+}
+.work-item .links a{
+  transition:  0.5s ease;
+
+}
+.work-item .links a:hover{
+  color: rgb(255, 0, 221);
 }
 .work-item h3{
+  font-size: 0.9rem;
   font-weight: bolder;
   text-align: center;
 }
@@ -324,22 +334,22 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%,
   margin: auto;
 }
 .contact h1{
-  margin-top: 45px;
+  padding-top: 110px;
   text-align: center;
-  font-size: 4rem;
-  
+  font-size: 3.3rem;
+  margin-bottom: 150px;
 }
 .contact form {
-  margin: 0 auto;
-  margin-top: 200px;
-  width: 50%;
+  margin:  auto;
+  margin-top: 50px;
+  width: 45%;
   margin-bottom: 70px;
   text-align: center;
 }
 
 .contact form label{
   
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   border-bottom: 1px solid black;
 }
@@ -351,7 +361,7 @@ textarea {
   margin-bottom: 30px;
   width: 100%;
   padding: 12px 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid black;
@@ -369,7 +379,7 @@ textarea {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:  0.3s ease-in-out;
 }
 
 .contact form input[type="submit"]:hover {
@@ -381,7 +391,7 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer-container {
@@ -392,7 +402,7 @@ footer {
 
 
 .footer-col a {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: white;
   margin-right: 40px;
 }
@@ -403,11 +413,12 @@ footer {
 }
 .footer-col .footer-name .icon{
   color: aqua;
-  margin-right: 10px;
-  font-size: 1.2rem;
+  margin-right: 20px;
+  font-size: 1rem;
 }
 .footer-col .footer-name p{
-  font-size: 1.2rem;
+  line-height: 17px;
+  font-size: 1rem;
 }
 
 
@@ -445,15 +456,45 @@ footer {
     overflow: hidden;
   }
   .home-section h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    animation: 
+    typing 2s steps(80, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+
+  }
+  /* animación de escritura */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+
+  /* animación de cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
+  }
+  .about-image{
+    -webkit-filter: blur(0px);
+  }
+  .skills-contain{
+    height: 110vh;
+    padding: 0;
   }
   .skills-contain h1{
-    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin: 0;
   }
+
   .skills-contain .skills{
-    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding-top: 40px;
     width: 80%;
-    height: 88%;
+    height: 75%;
+  }
+  .skills-contain .skills ul{
+    margin-bottom: 0;
   }
   
   .works{
