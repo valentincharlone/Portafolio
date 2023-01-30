@@ -1,6 +1,6 @@
 import React from "react";
 import yo from '../assets/yo.jpg'
-
+import cv from '../assets/cv.pdf'
 
 
 const About = () => {
@@ -36,6 +36,7 @@ const About = () => {
             Ademas tengo certificaciones de cursos realizados en JavaScript y React
           </p>
           <h3>Adjunto CV</h3>
+          <a href="" download={cv}>Download</a>
         </div>
       </div>
     </section>
