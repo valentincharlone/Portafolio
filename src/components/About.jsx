@@ -36,7 +36,7 @@ const About = () => {
             Ademas tengo certificaciones de cursos realizados en JavaScript y React
           </p>
           <h3>Adjunto CV</h3>
-          <a href="" download={cv}>Download</a>
+          <a href={cv} download="download">Download</a>
         </div>
       </div>
     </section>
