@@ -5,7 +5,7 @@ const Proyects = () => {
   return (
     <section id='proyects' className='proyects'>
       
-      <h1>PROYECTS</h1>
+      <h1>PROJECTS</h1>
       <ListWork />
     </section>
   )

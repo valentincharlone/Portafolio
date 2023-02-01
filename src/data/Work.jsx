@@ -3,6 +3,7 @@ import carnes from '../assets/carnes.png'
 import tasks from '../assets/frontend-task.png'
 import blog from '../assets/blog.png'
 import bebida from '../assets/bebidas.png'
+import movies from '../assets/movies.png'
 
 export const works = [
     {
@@ -37,8 +38,17 @@ export const works = [
         'url': 'https://github.com/valentincharlone/frontend-mentor-tailwind-react',
         'tecnologias': 'React js, Taildwind ',
         'link': 'https://proyectoreactvachi.netlify.app/',
-        'description': 'Primer proyecto usando React. CRUD de tareas trabajando con hooks y localStorage, inicializando el proyecto con Vite, tambien se aplico el tema nocturno y claro y para el estilo use el framework Tailwind CSS muy bueno!',
+        'description': 'Proyecto creado usando React. CRUD de tareas trabajando con hooks y localStorage, inicializando el proyecto con Vite, tambien se aplico el tema nocturno y claro y para el estilo use el framework Tailwind CSS muy bueno!',
         'img': `${tasks}`
+    },
+    {
+        'id': 'movies',
+        'name': 'App Movies',
+        'url': 'https://github.com/valentincharlone/app-movies',
+        'tecnologias': 'React, CSS Module ',
+        'link': 'https://app-movies-tmdb.netlify.app/',
+        'description': 'Proyecto creado tambien usando React en el cual consumimos una API de TMDB, inicializando el proyecto con create-react-app y en los estilos utilizamos CSS Modules',
+        'img': `${movies}`
     },
     {
         'id': 'Blog',
