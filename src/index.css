@@ -16,10 +16,11 @@ body{
 .header {
   margin: auto;
   display: flex;
-  height: 75px;
+  height: 70px;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
+  opacity: 0.8;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -442,6 +443,72 @@ footer {
 .footer-col .footer-name p{
   line-height: 17px;
   font-size: 1rem;
+}
+
+@media (max-width: 360px){
+  .header .logo span{
+    font-size: 3.4rem;
+  }
+  .header .logo h2{
+    margin-left: 15px;
+    font-size: 0.1rem;
+    
+  }
+  
+  .menu  li a{
+    color: white;
+    font-size: 1.2rem;
+  }
+  .header .visible{
+    margin-top: 5px;
+  }
+  .header .visible li a{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+  }
+  .home .home-section  .description {
+    font-size: 1.4rem;
+    animation: 
+    typing 1.3s steps(100, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+  }
+  /* animación de escritura */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 95% }
+  }
+
+  /* animación de cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
+  }
+  .works .work-item .map-img:hover > .capa p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  .works .work-item .map-img .capa p{
+    font-size: 0.7rem;
+    margin: auto;
+    line-height: 15px;
+    
+  }
+  .contact form{
+    width: 60%;
+  }
+  .footer-container .footer-col a{
+    line-height: 40px;
+    margin-right: 20px;
+  }
+  .footer-col .footer-name .icon{
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-right: 0;
+  }
 }
 
 
