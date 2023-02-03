@@ -510,6 +510,25 @@ footer {
     margin-right: 0;
   }
 }
+@media (max-width: 440px){
+  .home .home-section  .description {
+    font-size: 1.3rem;
+    animation: 
+    typing 1.3s steps(100, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+  }
+  /* animación de escritura */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 95% }
+  }
+
+  /* animación de cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
+  }
+}
 
 
 @media  (max-width: 583px) {
@@ -557,7 +576,7 @@ footer {
 
 /* MEDIA QUERI */
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .menu {
       display: none;
   }
