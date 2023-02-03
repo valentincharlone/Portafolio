@@ -122,7 +122,7 @@ body{
 /* animación de escritura */
 @keyframes typing {
   from { width: 0 }
-  to { width: 45% }
+  to { width: 42% }
 }
 
 /* animación de cursor */

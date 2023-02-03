@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <section id='contact' className='contact'>
-      <h1>CONTACT</h1>
+      <h1>Contact</h1>
       <form onSubmit={sendEmail}>
         <label>Nombre y Apellido</label>
         <input type="text" name="name" /><br></br>

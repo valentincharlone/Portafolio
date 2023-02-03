@@ -13,7 +13,7 @@ import { DiGit } from 'react-icons/di'
 const Technologies = () => {
     return (
         <section id='technologies' className='skills-contain'>
-            <h1>SKILLS</h1>
+            <h1>Skills</h1>
             <div className='skills'>
                 <ul>
                     <li> <AiFillHtml5 />
