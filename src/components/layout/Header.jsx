@@ -24,7 +24,7 @@ const Header = () => {
                 
                 <ul className={`menu ${isMenuOpen ? "visible" : "hidden"}`}>
                     <li>
-                        <a href="#home" to='/home'>Home</a>
+                        <a href="#home" to='/landingPage'>Home</a>
                     </li>
                     <li>
                         <a href="#about" to='/about'>About</a>
