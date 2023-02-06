@@ -7,13 +7,15 @@ import Contact from './Contact'
 
 const LandingPage = () => {
   return (
-    <>
-        <Home />
-        <About />
-        <Technologies />
-        <Proyects />
-        <Contact />
-    </>
+    <div id='landingPage'>
+
+      <Home />
+      <About />
+      <Technologies />
+      <Proyects />
+      <Contact />
+    </div>
+    
   )
 }
 
