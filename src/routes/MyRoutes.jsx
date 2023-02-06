@@ -7,7 +7,6 @@ import Technologies from '../components/Technologies'
 import Proyects from '../components/Proyects'
 import Contact from '../components/Contact'
 import Footer from '../components/layout/Footer'
-import Home from '../components/Home'
 
 export const MyRoutes = () => {
   return (
@@ -17,8 +16,8 @@ export const MyRoutes = () => {
 
           <section className='content'>
               <Routes>
+                  <Route path='/' element={<Navigate to='/landingPage' />} />
                   <Route path='/landingPage' element={<LandingPage />} />
-                  <Route path='/home' element={<Home />} />
                   <Route path='/about' element={<About />} />
                   <Route path='/technologies' element={<Technologies />} />
                   <Route path='/proyects' element={<Proyects />} />
