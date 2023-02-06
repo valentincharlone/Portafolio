@@ -241,11 +241,19 @@ body{
   margin-top: 30px;
 }
 .skills-contain .skills li{
-  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-size: 4.7rem;
   list-style: none;
   padding-bottom: 90px;
   
+}
+.skills-contain .skills li span{
+  padding-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8d008d;
 }
 
 /* PROYECTSS */
@@ -408,6 +416,11 @@ textarea {
 
 .contact form input[type="submit"]:hover {
   background-color: #913e91;
+}
+.alert{
+  margin-left: 25%;
+  text-align: center;
+  justify-content: center;
 }
 
 /* FOOTER */

@@ -17,28 +17,28 @@ const Technologies = () => {
             <div className='skills'>
                 <ul>
                     <li> <AiFillHtml5 />
-                        
+                        <span>HTML</span> 
                     </li>
                     <li> <TbBrandCss3 />
-                         
+                        <span>CSS</span>
                     </li>
                     <li> <TbBrandJavascript /> 
-                        
+                        <span>JavaScript</span>
                     </li>
                     <li> <GrReactjs /> 
-                        
+                        <span>React</span>
                     </li>
                     <li> <SiPhp />
-                        
+                        <span>PHP</span>
                     </li>
                     <li> <SiMysql />
-                         
+                        <span>SQL</span>
                     </li>
                     <li> <BsGithub />
-                        
+                        <span>GitHub</span>
                     </li>
                     <li> <DiGit />
-                        
+                        <span>Git</span>
                     </li>
                 </ul>
             </div>

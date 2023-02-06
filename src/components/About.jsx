@@ -6,10 +6,13 @@ import "toastify-js/src/toastify.css"
 import cv from '../assets/cv.pdf'
 
 
+
 const About = () => {
 
   const handleDownload = () => {
-    console.log('cv')
+    
+    
+
     Toastify({
       text: "Descargado",
       className: "info",
