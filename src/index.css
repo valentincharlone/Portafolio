@@ -37,6 +37,10 @@ body{
   font-size: 60px;
   font-weight: bolder;
 }
+.header .logo span a{
+  text-decoration: none;
+  color: white;
+}
 .header .logo h2{
   display: block;
   flex-basis: 20px;
@@ -417,10 +421,13 @@ textarea {
 .contact form input[type="submit"]:hover {
   background-color: #913e91;
 }
-.alert{
-  margin-left: 25%;
+
+.alert span{
   text-align: center;
-  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: bolder;
+
 }
 
 /* FOOTER */

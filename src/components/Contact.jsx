@@ -61,11 +61,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h1>Contact</h1>
-        {
-          error ? (<MuiAlert />)
-          :
-          ''
-        }
+        
       <form onSubmit={sendEmail}>
         
         <label>Nombre y Apellido</label>
@@ -93,9 +89,13 @@ const Contact = () => {
             onChange={handleChange}>
         </textarea>
         <br></br>
+        {
+          error ? (<MuiAlert />)
+          :
+          ''
+        }
+        <br></br> 
         <input type="submit" value="Enviar" />
-        <br></br> <br />
-        
         
       </form>
     </section>
