@@ -45,11 +45,6 @@ const About = () => {
             buenas energías.
           </p>
           <p>
-            Mi objetivo principal es poder encontrar mi primer empleo
-            ya sea como desarrollador Front-end o Back-end,
-            priorizando la experiencia y el trabajo en equipo. 
-          </p>
-          <p>
             En este momento me encuentro estudiando una carrera a fines informaticos y/o tecnologicos - TUDAI,
             en la Facultad de Ciencias Exactas Tandil.
             Ademas tengo certificaciones de cursos realizados en JavaScript y React

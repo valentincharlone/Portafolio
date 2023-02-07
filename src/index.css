@@ -464,7 +464,16 @@ footer {
   line-height: 17px;
   font-size: 1rem;
 }
-
+/* ERRRORR */
+.error{
+  min-height: 890px;
+  max-width: 1400px;
+  margin: auto;
+}
+.error .error-link{
+  padding-top: 200px;
+  text-align: center;
+}
 @media (max-width: 360px){
   .header .logo span{
     font-size: 3.4rem;
