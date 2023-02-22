@@ -487,7 +487,6 @@ footer {
     font-size: 0.1rem;
     
   }
-  
   .menu  li a{
     color: white;
     font-size: 1.2rem;
@@ -501,23 +500,6 @@ footer {
     color: white;
     background-color: black;
     opacity: 0.8;
-  }
-  .home .home-section  .description {
-    font-size: 1.4rem;
-    animation: 
-    typing 1.3s steps(100, end),
-    blink-caret 0.75s step-end infinite; /* anima el cursor */
-  }
-  /* animación de escritura */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 95% }
-  }
-
-  /* animación de cursor */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000000; }
   }
   .works .work-item .map-img:hover > .capa p{
     margin-top: 10px;
@@ -543,17 +525,22 @@ footer {
     margin-right: 0;
   }
 }
-@media (max-width: 440px){
-  .home .home-section  .description {
-    font-size: 1.3rem;
+
+
+
+@media screen and  (max-width: 585px) {
+  
+  .home .home-section .description {
+    font-size: 1.5rem;
     animation: 
-    typing 1.3s steps(100, end),
+    typing 2s steps(80, end),
     blink-caret 0.75s step-end infinite; /* anima el cursor */
+
   }
   /* animación de escritura */
   @keyframes typing {
     from { width: 0 }
-    to { width: 95% }
+    to { width: 60% }
   }
 
   /* animación de cursor */
@@ -561,10 +548,7 @@ footer {
     from, to { border-color: transparent }
     50% { border-color: #000000; }
   }
-}
-
-
-@media  (max-width: 583px) {
+  
   .header .logo{
     margin-left: 35px;
   }
@@ -609,7 +593,25 @@ footer {
 
 /* MEDIA QUERI */
 
-@media (max-width: 770px) {
+@media screen and (max-width: 870px) {
+  .home-section .description{
+    font-size: 2.5rem;
+    animation: 
+    typing 2s steps(80, end),
+    blink-caret 0.75s step-end infinite; 
+
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
+  }
   .menu {
       display: none;
   }
@@ -617,42 +619,24 @@ footer {
       display: flex;
       margin-left: 70px;
   }
+ 
   .visible {
     position: absolute;
     display: block;
     flex-wrap: wrap;
-    justify-content: center;
     z-index: 100;
     margin-top: 30px;
-   
+    margin-left: -20px;
   }
   .visible li {
-    font-size: 1.5rem;
     padding-top: 20px;
-    margin-left: 5px;
+    
     color: white;
   }
   .visible li a{
+    font-size: 1.5rem;
     color: black;
     overflow: hidden;
-  }
-  .home-section h1{
-    font-size: 2.5rem;
-    animation: 
-    typing 2s steps(80, end),
-    blink-caret 0.75s step-end infinite; /* anima el cursor */
-
-  }
-  /* animación de escritura */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 80% }
-  }
-
-  /* animación de cursor */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000000; }
   }
   .about-description{
     width: 80%;
@@ -703,8 +687,15 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 1370px) {
-  .home-section h1{
+@media screen and (max-width: 1210px) {
+  .header nav .menu  li {
+    font-size: 0.7rem;
+    margin: 0px 30px;
+  }
+ 
+}
+@media screen and (max-width: 1500px) {
+  .description {
     font-size: 3.5rem;
     animation: 
     typing 2s steps(80, end),
@@ -723,23 +714,9 @@ footer {
     50% { border-color: #000000; }
   }
 }
-@media (max-width: 1670px) {
-  .home-section h1{
-    font-size: 3.5rem;
-    animation: 
-    typing 2s steps(80, end),
-    blink-caret 0.75s step-end infinite; /* anima el cursor */
 
-  }
-  /* animación de escritura */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 52% }
-  }
 
-  /* animación de cursor */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #000000; }
-  }
-}
+
+
+
+
