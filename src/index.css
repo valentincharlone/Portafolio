@@ -208,6 +208,8 @@ body{
 
 /* SKILLLLS */
 .skills-contain{
+  position: relative;
+  overflow: hidden;
   padding-top: 100px;
   height: 100vh;
   max-width: 100%;
@@ -215,7 +217,9 @@ body{
   padding-bottom: 100px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
+  
 }
+
 .skills-contain h1{
   
   text-align: center;
@@ -697,5 +701,45 @@ footer {
   .skills-contain .skills ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1370px) {
+  .home-section h1{
+    font-size: 3.5rem;
+    animation: 
+    typing 2s steps(80, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+
+  }
+  /* animación de escritura */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+
+  /* animación de cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
+  }
+}
+@media (max-width: 1670px) {
+  .home-section h1{
+    font-size: 3.5rem;
+    animation: 
+    typing 2s steps(80, end),
+    blink-caret 0.75s step-end infinite; /* anima el cursor */
+
+  }
+  /* animación de escritura */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 52% }
+  }
+
+  /* animación de cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000000; }
   }
 }
