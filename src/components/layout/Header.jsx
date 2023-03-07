@@ -1,45 +1,41 @@
-import { useState } from 'react';
-import { IoMenu } from 'react-icons/io5'
-
+import { useState } from "react";
+import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-   
     return (
         <header className="header">
-            
             <div className="logo">
-                    
-                    <span><a href="#home">VC</a></span>
-                    <h2>Valentin Charlone</h2>
+                <span>
+                    <a href="#home">VC</a>
+                </span>
+                <h2>Valentin Charlone</h2>
             </div>
             <nav>
-                
-                <IoMenu 
-                    className="toggle-button" 
+                <IoMenu
+                    className="toggle-button"
                     onClick={(e) => {
-                            e.stopPropagation()
-                            setIsMenuOpen(!isMenuOpen)}
-                        }>
-                </IoMenu>
-                
+                        e.stopPropagation();
+                        setIsMenuOpen(!isMenuOpen);
+                    }}
+                ></IoMenu>
+
                 <ul className={`menu ${isMenuOpen ? "visible" : "hidden"}`}>
                     <li>
-                        <a href="#home" to='/landingPage'>Home</a>
+                        <Link to="/landingPage">Home</Link>
                     </li>
                     <li>
-                        <a href="#about" to='/about'>About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <a href="#technologies" to='/technologies'>Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#proyects" to='/proyects'>Projects</a>
+                        <Link to="/technologies">Skills</Link>
                     </li>
                     <li>
-                        <a href="#contact" to='/contact'>Contact</a>
+                        <Link to="/proyects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>
