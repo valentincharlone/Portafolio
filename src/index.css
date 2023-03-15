@@ -674,13 +674,14 @@ footer {
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 87% }
+    to { width: 89% }
   }
   .skills-contain h1{
     font-size: 3rem;
   }
   .skills-contain .skills {
     margin-bottom: 40px;
+    width: 90%;
   }
 
   .skills-contain .skills:hover{
