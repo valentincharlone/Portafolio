@@ -211,10 +211,9 @@ body{
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  height: 100vh;
   max-width: 100%;
   margin: auto;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
   
@@ -231,9 +230,7 @@ body{
   padding-top: 20px;
   margin: auto;
   width: 80%;
-  margin-top: 100px;
   color: white;
-  margin-bottom: 40px;
   border-radius: 20px;
   transition: all 0.5s;
 }
@@ -261,6 +258,7 @@ body{
   padding-top: 10px;
   font-size: 1rem;
   font-weight: bold;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -620,13 +618,10 @@ footer {
   .about-image{
     -webkit-filter: blur(0px);
   }
-  .skills-contain{
-    height: 100vh;
-    padding: 0;
-  }
+  
   .skills-contain h1{
-    padding-top: 40px;
-    padding-bottom: 45px;
+
+    padding-bottom: 55px;
     margin: 0;
   }
 
@@ -640,9 +635,7 @@ footer {
     margin-top: 0px;
   }
   .skills-contain .skills li{
-    
     padding-bottom: 70px;
-    
   }
   
   .works{
@@ -685,6 +678,16 @@ footer {
   }
   .skills-contain h1{
     font-size: 3rem;
+  }
+  .skills-contain .skills {
+    margin-bottom: 40px;
+  }
+
+  .skills-contain .skills:hover{
+    box-shadow: none;
+  }
+  .skills-contain .skills li{
+    margin-top: 20px;
   }
   .proyects h1{
     font-size: 3rem;
