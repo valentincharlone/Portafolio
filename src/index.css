@@ -707,6 +707,11 @@ footer {
     margin-left: 10px;
     line-height: 17px;
   }
+  .work-item .links{
+    
+    font-size: 1.4rem;
+    padding: 10px 50px 10px 40px;
+  }
   .contact h1{
     font-size: 3rem;
   }

@@ -4,15 +4,16 @@ import tasks from '../assets/frontend-task.png'
 import blog from '../assets/blog.png'
 import bebida from '../assets/bebidas.png'
 import movies from '../assets/movies.png'
+import news from '../assets/newss.png'
 
 export const works = [
     {
-        'id': 'Bebidas',
-        'name': 'Bebidas energizantes',
+        'id': 'News',
+        'name': 'News',
         'url': 'https://github.com/valentincharlone/TPE-Web1',
-        'tecnologias': 'HTML, CSS, JavaScript',
+        'tecnologias': 'HTML, CSS',
         'link': 'https://hilarious-cuchufli-c4d271.netlify.app/index.html',
-        'img': `${bebida}`,
+        'img': `${news}`,
         'description': 'Proyecto que fue creado para la facultad, trabajando de manera colaborativa en el cual se utilizo - HTML - CSS - JAVASCRIPT'
     },
     {
