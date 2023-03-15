@@ -108,7 +108,7 @@ body{
 }
 
 .home-section .description {
-  font-size: 3.5rem; 
+  font-size: 3.3rem; 
   color: white; 
   font-weight: bolder;
   text-align: center;
@@ -126,7 +126,7 @@ body{
 /* animación de escritura */
 @keyframes typing {
   from { width: 0 }
-  to { width: 52% }
+  to { width: 40% }
 }
 
 /* animación de cursor */
@@ -228,11 +228,11 @@ body{
   
 }
 .skills-contain .skills{
-  padding-top: 40px;
+  padding-top: 20px;
   margin: auto;
-  width: 70%;
+  width: 80%;
   margin-top: 100px;
-  background-color: white;
+  color: white;
   margin-bottom: 40px;
   border-radius: 20px;
   transition: all 0.5s;
@@ -244,6 +244,7 @@ body{
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   text-align: center;
   margin-top: 30px;
 }
@@ -251,16 +252,16 @@ body{
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 4.7rem;
+  gap: 20px;
+  font-size: 5rem;
   list-style: none;
-  padding-bottom: 90px;
-  
+  padding-bottom: 70px;
 }
 .skills-contain .skills li span{
   padding-top: 10px;
   font-size: 1rem;
   font-weight: bold;
-  color: #8d008d;
+  color: white;
 }
 
 /* PROYECTSS */
@@ -483,7 +484,7 @@ footer {
 /* MEDIA QUERI */
 @media (max-width: 1320px){
   .home-section .description{
-    font-size: 3.3rem;
+    font-size: 3.1rem;
     animation: 
     typing 2s steps(80, end),
     blink-caret 0.75s step-end infinite; 
@@ -515,7 +516,7 @@ footer {
     margin: 0 25px;
   }
   .home-section .description{
-    font-size: 3.2rem;
+    font-size: 3rem;
     animation: 
     typing 2s steps(80, end),
     blink-caret 0.75s step-end infinite; 
@@ -680,16 +681,45 @@ footer {
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 85% }
+    to { width: 87% }
+  }
+  .skills-contain h1{
+    font-size: 3rem;
+  }
+  .proyects h1{
+    font-size: 3rem;
+  }
+  .work-item .map-img{
+    margin-left: 12px;
+    width: 90%;
   }
   .work-item .map-img:hover > .capa p{
     margin-top: 10px;
   }
 
   .work-item .map-img .capa p{
+    width: 93%;
     font-size: 0.8rem;
-    margin-left: 30px;
-    line-height: 20px;
+    margin-left: 10px;
+    line-height: 17px;
+  }
+  .contact h1{
+    font-size: 3rem;
+  }
+  .contact form{
+    width: 70%;
+  }
+  .contact form input[type='submit']{
+    margin-top: 70px;
+  }
+  .footer-col a{
+    font-size: 1.6rem;
+    margin-right: 30px;
+  }
+  .footer-col .footer-name .icon{
+    margin-left: 20px;
+    margin-right: -10px;
+    font-size: 1.8rem;
   }
 
 }

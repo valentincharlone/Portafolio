@@ -50,13 +50,13 @@ export const works = [
         'description': 'Proyecto creado tambien usando React en el cual consumimos una API de TMDB, inicializando el proyecto con create-react-app y en los estilos utilizamos CSS Modules',
         'img': `${movies}`
     },
-    {
-        'id': 'Blog',
-        'name': 'Blog',
-        'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
-        'tecnologias': 'MongoDB, Express, Node js, React',
+    // {
+    //     'id': 'Blog',
+    //     'name': 'Blog',
+    //     'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
+    //     'tecnologias': 'MongoDB, Express, Node js, React',
         
-        'img': `${blog}`
-    },
+    //     'img': `${blog}`
+    // },
     
 ]
