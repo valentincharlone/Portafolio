@@ -34,7 +34,7 @@ body{
 }
 .header .logo span{
   display: block;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bolder;
 }
 .header .logo span a{
@@ -48,7 +48,7 @@ body{
   margin-top: 8px;
   font-weight: 100;
   text-transform: lowercase;
-  
+  font-size: 22px;
 }
 
 .header nav{
@@ -217,7 +217,7 @@ body{
   padding-top: 100px;
   max-width: 100%;
   margin: auto;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
   
@@ -333,7 +333,7 @@ body{
   visibility: visible;
 }
 .work-item .map-img:hover > .capa p{
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   
 }
@@ -403,7 +403,7 @@ body{
 input[type="email"],
 textarea {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 100%;
   padding: 12px 20px;
   font-size: 1rem;
@@ -640,7 +640,7 @@ footer {
     grid-auto-rows: max-content;
     flex-wrap: wrap;
     z-index: 100;
-    padding: 30px 0 0 0px;
+    padding: 30px 0 0 20px;
     right: 0;
     width: 55%;
     max-width: 330px;
@@ -677,6 +677,9 @@ footer {
     margin-top: 0;
     width: 70%;
   }
+  .skills-contain .skills:hover{
+    box-shadow: none;
+  }
   .skills-contain .skills ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -703,21 +706,43 @@ footer {
     
   }
   .work-item .links{
-    font-size: 1.4rem;
-    padding: 10px 90px 10px 80px;
+    
+    padding: 10px 70px 10px 80px;
   }
   .work-item h3{
     margin-right: 10px;
+  }
+}
+@media (max-width: 550px){
+  .work-item .links{
+    padding: 10px 50px 10px 80px;
+  }
+  .work-item h3{
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  .work-item .map-img .capa p{
+    font-size: 0.8rem;
+    margin-left: 30px;
+    line-height: 22px;
+    
   }
 }
 
 @media (max-width: 480px) {
   .header .logo{
     margin-left: 30px;
+    
   }
- 
+  .header .logo span{
+    font-size: 43px;
+  }
+  .header .logo h2{
+    font-size: 18px;
+    margin: 4px 0 0 20px;
+  }
   .visible li{
-    padding: 30px 0 0 15px;
+    padding: 30px 0 0 0px;
   }
   .home-section .description{
     font-size: 1.5rem;
@@ -760,7 +785,7 @@ footer {
     width: 93%;
     font-size: 0.8rem;
     margin-left: 10px;
-    line-height: 17px;
+    line-height: 18px;
   }
   .work-item .links{
     
@@ -777,13 +802,24 @@ footer {
     margin-top: 70px;
   }
   .footer-col a{
-    font-size: 1.6rem;
+    margin-top: 20px;
+    font-size: 1.4rem;
     margin-right: 30px;
+  }
+  .footer-col a svg{
+    margin-top: 5px;
+    
   }
   .footer-col .footer-name .icon{
     margin-left: 20px;
-    margin-right: -10px;
-    font-size: 1.8rem;
+    margin-right: -20px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+  .footer-col .footer-name p{
+    margin-left: 20px;
+    
+    font-size: 1rem;
   }
 
 }

@@ -2,7 +2,7 @@ import boots from '../assets/boots.png'
 import carnes from '../assets/carnes.png'
 import tasks from '../assets/frontend-task.png'
 import blog from '../assets/blog.png'
-import bebida from '../assets/bebidas.png'
+import weather from '../assets/weather.png'
 import movies from '../assets/movies.png'
 import news from '../assets/1news.png'
 
@@ -19,6 +19,7 @@ export const works = [
     {
         'id': 'Pagina de botines',
         'name': 'Venta de botines',
+        'link': 'nada',
         'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
         'tecnologias': 'HTML, CSS, JavaScript (vue), PHP, SQL',
         'description': 'Proyecto creado para la facultad en el cual se trabajo tambien de manera colaborativa utilizando PHP como lenguaje principal, ademas usamos MVC como estructura y PDO - trabajamos con XAMP para hostear de manera local el proyecto',
@@ -51,13 +52,13 @@ export const works = [
         'description': 'Proyecto creado tambien usando React en el cual consumimos una API de TMDB, inicializando el proyecto con create-react-app y en los estilos utilizamos CSS Modules',
         'img': `${movies}`
     },
-    // {
-    //     'id': 'Blog',
-    //     'name': 'Blog',
-    //     'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
-    //     'tecnologias': 'MongoDB, Express, Node js, React',
-        
-    //     'img': `${blog}`
-    // },
+    {
+        'id': 'Weather',
+        'name': 'Weather app',
+        'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
+        'link': 'nada',
+        'tecnologias': 'React js, Material UI',
+        'img': `${weather}`
+    },
     
 ]
