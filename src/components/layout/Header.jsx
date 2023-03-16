@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <header className="header">
@@ -24,19 +29,19 @@ const Header = () => {
 
                 <ul className={`menu ${isMenuOpen ? "visible" : "hidden"}`}>
                     <li>
-                        <Link to="/landingPage">Home</Link>
+                        <a href="#" onClick={scrollToTop}>Home</a>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <a href="#about" >About</a>
                     </li>
                     <li>
-                        <Link to="/technologies">Skills</Link>
+                        <a href="#technologies" >Skills</a>
+                    </li>
+                    <li> 
+                        <a href="#proyects" >Projects</a>
                     </li>
                     <li>
-                        <Link to="/proyects">Projects</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
+                        <a href="#contact" >Contact</a>
                     </li>
                 </ul>
             </nav>

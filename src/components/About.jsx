@@ -34,10 +34,10 @@ const About = () => {
         <div className="about-description" >
           <p>
             Hola, mi nombre es Valentin Charlone, vivo y estudio en Tandil, tengo 23 años 
-            y soy desarrollador web full stack
-            con muchas ganas de introducirme al mundo laboral. Me apasiona
-            crear soluciones innovadoras y estoy siempre buscando aprender
-            nuevas habilidades y tecnolgias.
+            y soy desarrollador web full stack. Me apasiona
+            crear soluciones innovadoras y estoy siempre en busca de aprender
+            nuevas habilidades y tecnolgias. Disfruto de hacer 
+            actividades al aire libre y conectarme con la naturaleza.
           </p>
           <p>
             Me considero una persona proactiva, soy capaz de
@@ -45,12 +45,12 @@ const About = () => {
             buenas energías.
           </p>
           <p>
-            En este momento me encuentro estudiando una carrera a fines informaticos y/o tecnologicos - TUDAI,
-            en la Facultad de Ciencias Exactas Tandil.
+            Actualmente, soy estudiante avanzado de la tecnicatura universitaria en desarrollo de aplicaciones informáticas (TUDAI) 
+            de la Universidad Nacional del Centro (UNICEN) en la Facultad de Ciencias Exactas.
             Ademas tengo certificaciones de cursos realizados en JavaScript y React
           </p>
           
-          <h3>Download cv </h3> 
+          <h3>Download CV </h3> 
           
           <a href={cv} download="CV" onClick={handleDownload} ><MdCloudDownload /></a>
           

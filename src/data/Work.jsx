@@ -4,7 +4,7 @@ import tasks from '../assets/frontend-task.png'
 import blog from '../assets/blog.png'
 import bebida from '../assets/bebidas.png'
 import movies from '../assets/movies.png'
-import news from '../assets/newss.png'
+import news from '../assets/1news.png'
 
 export const works = [
     {
