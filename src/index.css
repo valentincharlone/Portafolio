@@ -217,8 +217,7 @@ body{
   padding-top: 100px;
   max-width: 100%;
   margin: auto;
-  height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
   
@@ -565,8 +564,49 @@ footer {
     from { width: 0 }
     to { width: 70% }
   }
+  .skills-contain .skills {
+    padding-top: 20px;
+    width: 90%;
+  }
   .skills-contain .skills li{
+    margin-top: 20px;
     font-size: 4rem;
+  }
+  .works{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .work-item{
+    place-self: center;
+    width: 85%;
+  }
+
+  .work-item .links{
+    font-size: 1.4rem;
+    padding: 10px 130px 10px 80px;
+  }
+  .work-item h3{
+    margin-right: 30px;
+  }
+  .work-item .map-img:hover > .capa p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+  }
+  .work-item .map-img .capa p{
+    font-size: 1.3rem;
+    margin-left: 50px;
+    line-height: 35px;
+    
+  }
+  .contact form{
+    width: 52%;
+  }
+  .contact h1{
+    margin-bottom: 120px;
+  }
+  .contact form input[type="text"], input[type="email"], textarea {
+    margin-bottom: 50px;
   }
   
 }
@@ -661,6 +701,13 @@ footer {
     margin-left: 30px;
     line-height: 25px;
     
+  }
+  .work-item .links{
+    font-size: 1.4rem;
+    padding: 10px 90px 10px 80px;
+  }
+  .work-item h3{
+    margin-right: 10px;
   }
 }
 
