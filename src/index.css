@@ -343,7 +343,7 @@ body{
   margin-left: 50px;
   text-align: justify;
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-transform: none;
   margin-bottom: 120px;
   transition: all 300ms ease-out;
@@ -662,6 +662,10 @@ footer {
   }
   .about-description{
     width: 80%;
+    
+  }
+  .about-description p{
+    text-align: justify;
   }
   .about-image{
     -webkit-filter: blur(0px);
@@ -756,8 +760,18 @@ footer {
     from { width: 0 }
     to { width: 89% }
   }
-  .skills-contain h1{
+  .about-section h2{
     font-size: 3rem;
+  }
+  .about-image{
+    width: 220px;
+    height: 320px;
+  }
+  .about-description p{
+    font-size: 1rem;
+  }
+  .skills-contain h1{
+    font-size: 2.7rem;
   }
   .skills-contain .skills {
     margin-bottom: 40px;
@@ -771,11 +785,11 @@ footer {
     margin-top: 20px;
   }
   .proyects h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .work-item .map-img{
-    margin-left: 12px;
-    width: 90%;
+    margin-left: 10px;
+    width: 95%;
   }
   .work-item .map-img:hover > .capa p{
     margin-top: 10px;
@@ -789,11 +803,15 @@ footer {
   }
   .work-item .links{
     
-    font-size: 1.4rem;
-    padding: 10px 50px 10px 40px;
+    font-size: 1.2rem;
+    padding: 10px 50px 10px 32px;
+  }
+  .work-item h3{
+    margin-left: 0;
+    font-size: 0.8rem;
   }
   .contact h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .contact form{
     width: 70%;
