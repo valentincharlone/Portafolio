@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { AiFillHtml5 } from 'react-icons/ai'
-import { TbBrandCss3 } from 'react-icons/tb'
-import { TbBrandJavascript } from 'react-icons/tb'
+import { FaCss3 } from 'react-icons/fa'
+import { SiJavascript } from 'react-icons/si'
 import { GrReactjs } from 'react-icons/gr'
 import { SiPhp } from 'react-icons/si'
 import { SiMysql } from 'react-icons/si'
@@ -19,10 +19,10 @@ const Technologies = () => {
                     <li> <AiFillHtml5 />
                         <span>HTML</span> 
                     </li>
-                    <li> <TbBrandCss3 />
+                    <li> <FaCss3 />
                         <span>CSS</span>
                     </li>
-                    <li> <TbBrandJavascript /> 
+                    <li> <SiJavascript /> 
                         <span>JavaScript</span>
                     </li>
                     <li> <GrReactjs /> 
