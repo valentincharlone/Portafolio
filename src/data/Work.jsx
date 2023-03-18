@@ -10,18 +10,18 @@ export const works = [
     {
         'id': 'News',
         'name': 'News',
-        'url': 'https://github.com/valentincharlone/TPE-Web1',
-        'tecnologias': 'HTML, CSS',
-        'link': 'https://hilarious-cuchufli-c4d271.netlify.app/index.html',
+        'url': 'https://github.com/valentincharlone/News-homepage',
+        'tecnologias': 'HTML - CSS',
+        'link': 'https://comforting-sherbet-b52501.netlify.app/',
         'img': `${news}`,
-        'description': 'Proyecto que fue creado para la facultad, trabajando de manera colaborativa en el cual se utilizo - HTML - CSS - JAVASCRIPT'
+        'description': 'Proyecto elaborado tomando como diseño uno de los challenge de frontendmentor.io, pagina estatica utilizando solamente HTML y CSS Grid'
     },
     {
         'id': 'Pagina de botines',
         'name': 'Venta de botines',
         'link': 'nada',
         'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
-        'tecnologias': 'HTML, CSS, JavaScript (vue), PHP, SQL',
+        'tecnologias': 'HTML - CSS - JavaScript (vue) - PHP - SQL',
         'description': 'Proyecto creado para la facultad en el cual se trabajo tambien de manera colaborativa utilizando PHP como lenguaje principal, ademas usamos MVC como estructura y PDO - trabajamos con XAMP para hostear de manera local el proyecto',
         'img': `${boots}`
     },
@@ -38,7 +38,7 @@ export const works = [
         'id': 'frontend-mentor',
         'name': 'Tasks',
         'url': 'https://github.com/valentincharlone/frontend-mentor-tailwind-react',
-        'tecnologias': 'React js, Taildwind ',
+        'tecnologias': 'React - Taildwind ',
         'link': 'https://proyectoreactvachi.netlify.app/',
         'description': 'Proyecto creado usando React. CRUD de tareas trabajando con hooks y localStorage, inicializando el proyecto con Vite, tambien se aplico el tema nocturno y claro y para el estilo use el framework Tailwind CSS muy bueno!',
         'img': `${tasks}`
@@ -47,7 +47,7 @@ export const works = [
         'id': 'movies',
         'name': 'App Movies',
         'url': 'https://github.com/valentincharlone/app-movies',
-        'tecnologias': 'React, CSS Module ',
+        'tecnologias': 'React - CSS Module ',
         'link': 'https://app-movies-tmdb.netlify.app/',
         'description': 'Proyecto creado tambien usando React en el cual consumimos una API de TMDB, inicializando el proyecto con create-react-app y en los estilos utilizamos CSS Modules',
         'img': `${movies}`
@@ -55,9 +55,10 @@ export const works = [
     {
         'id': 'Weather',
         'name': 'Weather app',
-        'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
-        'link': 'nada',
-        'tecnologias': 'React js, Material UI',
+        'url': 'https://github.com/valentincharlone/Weather-app',
+        'link': 'https://storied-custard-7cfc03.netlify.app/',
+        'description': 'App creada e inicializada con Vite donde se empleo el uso de Weather API para consultar el clima sobre una ciudad especifica, la cual esta hecha con React y en los estilos y componenetes se utilizo Material UI ',
+        'tecnologias': 'React - Material UI',
         'img': `${weather}`
     },
     
