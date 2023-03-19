@@ -100,7 +100,7 @@ body{
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(46, 45, 45, 0.5)), url("./assets/tech1.jpg") ;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(46, 45, 45, 0.5)), url("./assets/techGod.png") ;
   background-repeat:  no-repeat;
   background-size: cover;
   background-position: center center;
