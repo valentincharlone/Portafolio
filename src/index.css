@@ -195,6 +195,7 @@ body{
 .about-description h3{
   padding-top: 20px;
   text-align: center;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 .about-description a{
@@ -202,12 +203,12 @@ body{
   justify-content: center;
   text-decoration: none;
   color: black;
-  font-size: 2rem;
-  transition: 0.5s ease-in-out;
+  font-size: 1.7rem;
+  transition: 0.3s ease-in-out;
   font-weight: bolder;
   border: 2px solid black;
   border-radius: 20px;
-  padding: 8px 10px 0 10px;
+  padding: 6px 8px 0 8px;
 }
 
 .about-description a:hover{
@@ -465,6 +466,11 @@ footer {
   font-size: 1.4rem;
   color: white;
   margin-right: 40px;
+  transition: 0.3s ease-in-out;
+}
+.footer-col a:hover{
+  color: rgb(199, 89, 221);
+  background-color: black;
 }
 .footer-col .footer-name{
   display: flex;
@@ -494,9 +500,25 @@ footer {
 
 
 /* MEDIA QUERI */
+
+@media(max-width: 1600px){
+  .home-section .description{
+    font-size: 3rem;
+    animation: 
+    typing 2s steps(80, end),
+    blink-caret 0.75s step-end infinite; 
+
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 47% }
+  }
+}
+
 @media (max-width: 1320px){
   .home-section .description{
-    font-size: 3.1rem;
+    font-size: 3rem;
     animation: 
     typing 2s steps(80, end),
     blink-caret 0.75s step-end infinite; 
