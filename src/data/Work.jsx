@@ -29,7 +29,7 @@ export const works = [
         'id': 'carnes premiun',
         'name': 'Carnes premiun',
         'url': 'https://github.com/valentincharlone/carnesPremiun',
-        'tecnologias': 'HTML, CSS, JavaScript',
+        'tecnologias': 'HTML - CSS - JavaScript',
         'link': 'https://carnespremiun.netlify.app/',
         'img': `${carnes}`,
         'description': 'Proyecto finalizado del curso de Javascript de CoderHouse, E-commerce en el que se trabajo con HTML - CSS Y JAVASCRIPT, ademas POO y localStorage para almacenar los datos del lado del cliente'
