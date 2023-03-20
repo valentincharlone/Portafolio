@@ -22,7 +22,7 @@ export const works = [
         'link': 'nada',
         'url': 'https://github.com/valentincharlone/TPE-Venta-de-botines',
         'tecnologias': 'HTML - CSS - JavaScript (vue) - PHP - SQL',
-        'description': 'Proyecto creado para la facultad en el cual se trabajo tambien de manera colaborativa utilizando PHP como lenguaje principal, ademas usamos MVC como estructura y PDO - trabajamos con XAMP para hostear de manera local el proyecto',
+        'description': 'Proyecto creado para la facultad en el cual se trabajo de manera colaborativa utilizando PHP como lenguaje principal, ademas usamos MVC como estructura y PDO - trabajamos con XAMP para hostear de manera local el proyecto',
         'img': `${boots}`
     },
     {
@@ -40,7 +40,7 @@ export const works = [
         'url': 'https://github.com/valentincharlone/frontend-mentor-tailwind-react',
         'tecnologias': 'React - Taildwind ',
         'link': 'https://proyectoreactvachi.netlify.app/',
-        'description': 'Proyecto creado usando React. CRUD de tareas trabajando con hooks y localStorage, inicializando el proyecto con Vite, tambien se aplico el tema nocturno y claro y para el estilo use el framework Tailwind CSS muy bueno!',
+        'description': 'Proyecto creado usando React. CRUD de tareas trabajando con hooks y localStorage, inicializando el proyecto con Vite, tambien se aplico el tema nocturno y claro y para el estilo use el framework Tailwind CSS',
         'img': `${tasks}`
     },
     {
