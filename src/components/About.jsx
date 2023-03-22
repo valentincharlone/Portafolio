@@ -36,18 +36,13 @@ const About = () => {
             Hola, mi nombre es Valentin Charlone, vivo y estudio en Tandil, tengo 23 años 
             y soy desarrollador web full stack. En este momento me encuentro orientado al desarrollo de 
             Front-end utilizando React principalmente, pero siempre abierto en busca de aprender
-            nuevas habilidades y tecnolgias. Disfruto de hacer 
-            actividades al aire libre y conectarme con la naturaleza.
-          </p>
-          <p>
-            Me considero una persona proactiva, soy capaz de
-            adaptarme a un grupo de trabajo rapidamente y poder aportar
-            buenas energías.
+            nuevas habilidades y tecnologias. 
+            
           </p>
           <p>
             Actualmente, soy estudiante avanzado de la tecnicatura universitaria en desarrollo de aplicaciones informáticas (TUDAI) 
             de la Universidad Nacional del Centro (UNICEN) en la Facultad de Ciencias Exactas.
-            Ademas tengo certificaciones de cursos realizados en JavaScript y React
+            Ademas tengo certificaciones de cursos realizados en JavaScript y React 
           </p>
           
           <h3>Download C.V. </h3> 

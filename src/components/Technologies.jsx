@@ -7,7 +7,7 @@ import { GrReactjs } from 'react-icons/gr'
 import { SiPhp } from 'react-icons/si'
 import { SiMysql } from 'react-icons/si'
 
-import { BsGithub } from 'react-icons/bs'
+import { FaBootstrap } from 'react-icons/fa'
 import { DiGit } from 'react-icons/di'
 
 const Technologies = () => {
@@ -22,6 +22,9 @@ const Technologies = () => {
                     <li> <FaCss3 />
                         <span>CSS</span>
                     </li>
+                    <li> <FaBootstrap />
+                        <span>bootstrap</span>
+                    </li>
                     <li> <SiJavascript /> 
                         <span>JavaScript</span>
                     </li>
@@ -33,9 +36,6 @@ const Technologies = () => {
                     </li>
                     <li> <SiMysql />
                         <span>SQL</span>
-                    </li>
-                    <li> <BsGithub />
-                        <span>GitHub</span>
                     </li>
                     <li> <DiGit />
                         <span>Git</span>
