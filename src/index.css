@@ -433,6 +433,7 @@ textarea {
   border-radius: 8px;
   cursor: pointer;
   transition:  0.3s ease-in-out;
+  font-family: JetBrains Mono,monospace;;
 }
 
 .contact form input[type="submit"]:hover {
@@ -449,16 +450,18 @@ textarea {
 
 /* FOOTER */
 footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
+  
 }
 
 
