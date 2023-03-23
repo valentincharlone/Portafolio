@@ -23,10 +23,10 @@ const ListWork = () => {
               <div className='links'>
                 {
                   work.link ? (
-                    <a href={work.link}><h4><AiOutlineLink /></h4></a>
+                    <a href={work.link} target='_blank'><h4><AiOutlineLink /></h4></a>
                   ) : ''
                 }
-                - <a href={work.url}><h4><FiGithub /></h4></a> 
+                - <a href={work.url} target='_blank'><h4><FiGithub /></h4></a> 
               </div>
               <h3>{work.tecnologias}</h3>
               

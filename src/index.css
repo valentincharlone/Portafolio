@@ -107,10 +107,11 @@ body{
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(46, 45, 45, 0.5)), url("./assets/tech1.jpg") ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/tech1.jpg") ;
   background-repeat:  no-repeat;
   background-size: cover;
   background-position: center center;
+  
   
 }
 
@@ -164,57 +165,56 @@ body{
 }
 
 .about-image {
+  overflow: hidden;
   border-radius: 10px ;
   object-fit: cover;
   width: 270px; 
   height:370px; 
-  transition: 1s ease;
-  -webkit-filter: blur(5px);
-  transition: 0.5s ease;
+  transition: 0.3s ease-in;
 }
 .about-image:hover{
-  -webkit-filter: blur(0px);
-  
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
 }
+
 
 .about-description {
   margin-top: 50px;
   width: 60%; /* esto es para que la descripción ocupe la mitad del ancho del contenedor */
   font-size: 1.2rem;
-  font-weight: bold;
+  
   text-align: center;
   margin-bottom: 70px;
 }
 .about-description p{
-  line-height: 30px;
+  line-height: 26px;
   margin-top: 20px;
   text-align: center;
   margin-bottom: 50px;
+  
 }
 
 .about-description h3{
   padding-top: 20px;
   text-align: center;
+  
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
-.about-description a{
-  
-  justify-content: center;
+.about-description svg{
   text-decoration: none;
-  color: black;
-  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 0px 7px 0 7px;
+  background-color: #4e067e;
   transition: 0.3s ease-in-out;
-  font-weight: bolder;
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 6px 8px 0 8px;
 }
 
-.about-description a:hover{
-  color: rgb(199, 89, 221);
-  background-color: black;
-  
+.about-description svg:hover  {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 
@@ -225,7 +225,7 @@ body{
   padding-top: 100px;
   max-width: 100%;
   margin: auto;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(162,140,222,1) 100%, rgba(223,96,240,1) 100%, rgba(0,212,255,1) 100%);
   
@@ -234,7 +234,7 @@ body{
 .skills-contain h1{
   text-align: center;
   font-size: 3.3rem;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   color: white;
   
 }
@@ -246,9 +246,7 @@ body{
   border-radius: 20px;
   transition: all 0.5s;
 }
-.skills-contain .skills:hover{
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
+
 .skills-contain .skills ul{
   display: grid;
   justify-content: space-between;
@@ -291,7 +289,7 @@ body{
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .work-item{
@@ -374,9 +372,18 @@ body{
   color: rgb(255, 0, 221);
 }
 .work-item h3{
+  
+  display: flex;
+  margin: auto;
+  color: rgb(0, 0, 0);
   font-size: 0.9rem;
-  font-weight: bolder;
   text-align: center;
+  background-color: #e8c4ff;
+  justify-content: center;
+  text-align: center;
+  padding: 3px;
+  border-radius: 10px;
+  width: 55%;
 }
 
 
@@ -390,7 +397,7 @@ body{
   padding-top: 110px;
   text-align: center;
   font-size: 3.3rem;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 .contact form {
   margin:  auto;
@@ -402,7 +409,7 @@ body{
 
 .contact form label{
   
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   border-bottom: 1px solid black;
 }
@@ -424,11 +431,12 @@ textarea {
 }
 
 .contact form input[type="submit"] {
-  margin-top: 100px;
-  width: 50%;
-  background-color: #7e067e;
+  margin-top: 80px;
+  width: 25%;
+  font-size: 1.2rem;
+  background-color: #4e067e;
   color: #fff;
-  padding: 14px 20px;
+  padding: 8px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -437,8 +445,10 @@ textarea {
 }
 
 .contact form input[type="submit"]:hover {
-  background-color: #913e91;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 
 .alert span{
   text-align: center;
@@ -454,41 +464,39 @@ footer {
   opacity: 0.9;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+}
+footer .back-to-top {
+  padding-bottom: 40px;
+}
+footer .back-to-top svg{
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s all;
+}
+footer .back-to-top svg:hover{
+  transform:  scale(1.2);
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  
 }
 
 
 .footer-col a {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   color: white;
-  margin-right: 40px;
+  margin: 30px;
   transition: 0.3s ease-in-out;
 }
 .footer-col a:hover{
-  color: rgb(199, 89, 221);
+  color: #7e3baa;
   background-color: black;
 }
-.footer-col .footer-name{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.footer-col .footer-name .icon{
-  color: aqua;
-  margin-right: 20px;
-  font-size: 1rem;
-}
-.footer-col .footer-name p{
-  line-height: 17px;
-  font-size: 1rem;
-}
+
 /* ERRRORR */
 .error{
   min-height: 890px;

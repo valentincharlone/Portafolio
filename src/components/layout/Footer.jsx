@@ -1,12 +1,22 @@
 import React from 'react'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillLinkedin} from 'react-icons/ai'
-import {HiOutlineMailOpen} from 'react-icons/hi'
-import {FaRegCopyright} from 'react-icons/fa'
+
+import {MdUpgrade} from 'react-icons/md'
+import { animateScroll as scroll } from "react-scroll";
+
 
 const Footer = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+};
   return (
     <footer>
+        <div className="back-to-top">
+          <a href="#" smooth duration={1000}>
+            <MdUpgrade onClick={scrollToTop}/>
+          </a>
+        </div>
         <div className="footer-container">
             <div className="footer-col">
                 
@@ -14,12 +24,7 @@ const Footer = () => {
                 <a href="https://github.com/valentincharlone"><BsGithub /></a>
             
             </div>
-            <div className="footer-col">
-              <div className='footer-name'>
-                <FaRegCopyright className='icon'/>
-                <p>Valentin Charlone</p>    
-              </div>
-            </div>
+            
         </div>
     </footer>
   )

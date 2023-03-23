@@ -8,7 +8,7 @@ const Home = () => {
 
         <div className="home-section">
           
-          <h1 className="description">Developer Full Stack</h1>
+          <h1 className="description">Full Stack Developer</h1>
           
         </div>
       
