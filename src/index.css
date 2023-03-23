@@ -372,18 +372,18 @@ body{
   color: rgb(255, 0, 221);
 }
 .work-item h3{
-  
   display: flex;
   margin: auto;
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
   text-align: center;
-  background-color: #e8c4ff;
+  font-weight: bolder;
+  font-style: italic;
   justify-content: center;
+  text-shadow: 2px 2px 5px rgb(182, 176, 184);
   text-align: center;
   padding: 3px;
-  border-radius: 10px;
-  width: 55%;
+  
 }
 
 
