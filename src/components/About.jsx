@@ -44,6 +44,9 @@ const About = () => {
             de la Universidad Nacional del Centro (UNICEN) en la Facultad de Ciencias Exactas.
             Ademas tengo certificaciones de cursos realizados en JavaScript y React 
           </p>
+          <span>
+            En proceso: Redux - Tailwind CSS
+          </span>
           
           <h3>Download C.V. </h3> 
           
