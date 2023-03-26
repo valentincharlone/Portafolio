@@ -48,7 +48,7 @@ const About = () => {
             En proceso: Redux - Tailwind CSS
           </span>
           
-          <h3>Download C.V. </h3> 
+          <h3>Descargar CV </h3> 
           
           <a href={cv} download="CV" onClick={handleDownload} ><MdCloudDownload /></a>
           
