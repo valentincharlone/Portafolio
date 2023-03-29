@@ -2,7 +2,7 @@ import React from 'react'
 import {BsGithub} from 'react-icons/bs'
 import {AiFillLinkedin} from 'react-icons/ai'
 
-import {MdUpgrade} from 'react-icons/md'
+import {GoChevronUp} from 'react-icons/go'
 import { animateScroll as scroll } from "react-scroll";
 
 
@@ -14,7 +14,7 @@ const Footer = () => {
     <footer>
         <div className="back-to-top">
           <a href="#" smooth duration={1000}>
-            <MdUpgrade onClick={scrollToTop}/>
+            <GoChevronUp onClick={scrollToTop}/>
           </a>
         </div>
         <div className="footer-container">
