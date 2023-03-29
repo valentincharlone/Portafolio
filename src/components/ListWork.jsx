@@ -20,14 +20,16 @@ const ListWork = () => {
                   <p>{work.description}</p>
                 </div>
               </div>
+                
               <div className='links'>
                 {
                   work.link ? (
                     <a href={work.link} target='_blank'><h4><AiOutlineLink /></h4></a>
-                  ) : ''
-                }
-                - <a href={work.url} target='_blank'><h4><FiGithub /></h4></a> 
+                    ) : ''
+                  }
+                <a href={work.url} target='_blank'><h4><FiGithub /></h4></a> 
               </div>
+              <hr />
               <h3>{work.tecnologias}</h3>
               
             </article>
